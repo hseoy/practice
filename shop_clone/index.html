@@ -1,0 +1,531 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 클론</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="ico_32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap wrap">
+            <div class="header__user-menu">
+                <div class="header__user-event">
+                    <a href="/">
+                        <img src="./assets/delivery_200323.gif" alt="delivery">
+                    </a>
+                </div>
+                <ul class="user-menu__menu-list">
+                    <li class="user-menu__menu">회원가입</li>
+                    <li class="user-menu__menu">로그인</li>
+                    <li class="user-menu__menu">고객센터<span class="sub-menu__icon-down">▼</span></li>
+                </ul>
+            </div>
+            <div class="header__logo">
+                <h1 class="logo__title">
+                    <a href="/">
+                        <img src="./assets/logo.png" alt="logo">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <nav class="gnb">
+        <div class="gnb__wrap wrap">
+            <div class="gnb__menu-wrap">
+                <ul class="gnb__menu-list">
+                    <li class="gnb__menu gnb__menu--icon">
+                        <div class="gnb__menu-icon">
+                            <img src="./assets/ico_gnb_all_off.png" alt="menu icon">
+                        </div>
+                        <a href="#" class="gnb__menu-link">
+                            전체 카테고리
+                        </a>
+                    </li>
+                    <li class="gnb__menu">
+                        <a href="#" class="gnb__menu-link">
+                            신상품
+                        </a>
+                    </li>
+                    <li class="gnb__menu">
+                        <a href="#" class="gnb__menu-link">
+                            베스트
+                        </a>
+                    </li>
+                    <li class="gnb__menu">
+                        <a href="#" class="gnb__menu-link">
+                            알뜰쇼핑
+                        </a>
+                    </li>
+                    <li class="gnb__menu">
+                        <a href="#" class="gnb__menu-link">
+                            특가/혜택
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar-wrap">
+                <div class="search-bar">
+                    <input type="text" class="search-bar__input">
+                    <input type="image" src="./assets/ico_search_x2.png" class="search-bar__btn-button"></input>
+                </div>
+            </div>
+            <div class="gnb__icon-wrap delivery-setting">
+                <a href="/">
+                    <img src="./assets/ico_delivery_setting.png" alt="delivery setting">
+                </a>
+            </div>
+            <div class="gnb__icon-wrap cart">
+                <a href="/">
+                    <img src="./assets/ico_cart.png" alt="cart">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="banner">
+        <div class="banner__wrap">
+            <button type="button" class="banner__btn-prev">&lt;</button>
+            <button type="button" class="banner__btn-next">&gt;</button>
+        </div>
+    </div>
+
+
+    <div class="product-view">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">이 상품 어때요?</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="special-product-view">
+        <div class="special-product-view__wrap wrap">
+            <div class="special-product-view__head">
+                <div class="special-product-view__title">
+                    <h3 class="special-product-view__main-title">일일특가</h3>
+                    <p class="special-product-view__sub-title">24시간 한정 특가</p>
+                </div>
+                <p class="special-product-view__sub-hook">망설이면 늦어요!</p>
+            </div>
+            <div class="special-product-view__item">
+                <div class="special-product-view-item__thum">
+                    <h4 class="special-product-view-item__thum-title">일일특가</h4>
+                    <div class="special-product-view-item__thum-image">
+                        <img src="./assets/1624862216976z0.jpg" alt="special product image">
+                    </div>
+                    <div class="special-product-view-item__thum-time">18:42:29 남음</div>
+                </div>
+                <div class="special-product-view-item__name">[폴라레티 후르츠] 헬로썸머 (40gx10개입) X 6개 (번들링)</div>
+                <div class="special-product-view-item__price">
+                    <span class="special-product-view-item__discount-rate">45%</span>
+                    <span class="special-product-view-item__in-price">
+                        <span class="special-product-view-item__selling">7,920원</span>
+                        <span class="special-product-view-item__cost">14,400원</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="product-view product-view--bg-gray">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">특가/혜택 &gt;</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-view">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">놓치면 후회할 가격 &gt;</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-event-banner">
+        <div class="image-event-banner__wrap wrap">
+            <a href="/">
+                <img src="./assets/pc_img_1624513132.webp" alt="banner">
+            </a>
+        </div>
+    </div>
+
+    <div class="product-view">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">지금 가장 핫한 상품 &gt;</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product-view product-view--bg-gray">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">필요한 것만 딱! 주방 용품 특가 &gt;</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-view">
+        <div class="product-view__wrap wrap">
+            <h3 class="product-view__head">마감세일 &gt;</h3>
+            <div class="product-view__items">
+                <button type="button" class="product-view-item__btn-next">&gt;</button>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1472727892110l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[백년백계] 닭 안심살 300g(냉장)</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">10%</span>
+                        3690원
+                    </div>
+                    <div class="product-view-item__cost">4,100원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/385_shop1_556007.webp" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[콜린스그린] 더 오렌지</h4>
+                    <div class="product-view-item__price">
+                        <span class="product-view-item__discount-rate">23%</span>
+                        13,552원
+                    </div>
+                    <div class="product-view-item__cost">17,600원</div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1567563159964l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[유기방아] 떡볶이떡 & 떡국떡 (냉동)</h4>
+                    <div class="product-view-item__price">
+                        4,300원
+                    </div>
+                </div>
+                <div class="product-view-item">
+                    <div class="product-view-item__thum">
+                        <img src="./assets/1470879732522l0.jpg" alt="product image">
+                    </div>
+                    <h4 class="product-view-item__name">[오뗄두스] 구움과자 2종</h4>
+                    <div class="product-view-item__price">
+                        2,000원
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-event-banner">
+        <div class="image-event-banner__wrap wrap">
+            <a href="/">
+                <img src="./assets/pc_img_1568875999.webp" alt="banner">
+            </a>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__wrap wrap">
+            <div class="footer__row footer__row--border">
+                <div class="footer__row-item">
+                    <div class="footer__cc">
+                        <h3 class="footer__cc-title">
+                            고객센터
+                        </h3>
+                        <div class="footer__row">
+                            <div class="footer__row-item footer__row-item--w156">
+                                <h4 class="footer__cc-link-wrap footer__cc-call-number">1644-1107</h4>
+                                <h4 class="footer__cc-link-wrap">
+                                    <a href="/">카카오톡 문의</a>
+                                </h4>
+                                <h4 class="footer__cc-link-wrap">
+                                    <a href="/">1:1 문의</a>
+                                </h4>
+                            </div>
+                            <div class="footer__row-item footer__row-item--w100p">
+                                <div class="footer__cc-call">
+                                    <h4 class="footer__cc-call-title">365 고객센터</h4>
+                                    <p class="footer__cc-call-description">오전 7시 ~ 오후 7시</p>
+                                </div>
+                                
+                                <div class="footer__cc-call">
+                                    <h4 class="footer__cc-call-title">365 고객센터</h4>
+                                    <p class="footer__cc-call-description">오전 7시 ~ 오후 7시</p>
+                                </div>
+                                
+                                <div class="footer__cc-call">
+                                    <h4 class="footer__cc-call-title">24시간 접수 가능</h4>
+                                    <p class="footer__cc-call-description">고객센터 운영 시간에 순차적으로 답변해드리겠습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row-item">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="/">컬리 소개</a></li>
+                        <li class="footer__nav-item"><a href="/">컬리소개영상</a></li>
+                        <li class="footer__nav-item"><a href="/">인재채용</a></li>
+                        <li class="footer__nav-item"><a href="/">이용약관</a></li>
+                        <li class="footer__nav-item"><a href="/">개인정보처리방침</a></li>
+                        <li class="footer__nav-item"><a href="/">이용안내</a></li>
+                    </ul>
+                    <div class="footer__company">
+                        법인명 (상호) : 주식회사 컬리 <span class="bar">I</span> 사업자등록번호 : 261-81-23567 <a
+                            href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no=" target="_blank"
+                            class="link">사업자정보
+                            확인</a>
+                        <br>
+                        통신판매업 : 제 2018-서울강남-01646 호 <span class="bar">I</span> 개인정보보호책임자 : 이원준
+                        <br>
+                        주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) <span class="bar">I</span> 대표이사 : 김슬아
+                        <br>
+                        입점문의 : <a href="https://forms.gle/oKMAe1SaicqMX3SC9" target="_blank" class="link">입점문의하기</a> <span
+                            class="bar">I</span> 제휴문의 : <a href="mailto:business@kurlycorp.com"
+                            class="link">business@kurlycorp.com</a>
+                        <br>
+                        채용문의 : <a href="mailto:recruit@kurlycorp.com" class="link">recruit@kurlycorp.com</a>
+                        <br>
+                        팩스: 070 - 7500 - 6098 <span class="bar">I</span> 이메일 : <a href="mailto:help@kurlycorp.com"
+                            class="link">help@kurlycorp.com</a>
+
+                    
+                        <em class="footer__copyright">© KURLY CORP. ALL RIGHTS RESERVED</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__row footer__row--border">
+                <div class="footer__description">
+                    이 웹사이트는 실제 마켓컬리의 서비스가 아니라 학습 용도로 클론된 웹사이트입니다. 
+                    실제로는 어떠한 동작도 수행하지 않습니다.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
